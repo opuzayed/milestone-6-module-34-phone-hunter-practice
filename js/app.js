@@ -1,11 +1,11 @@
-const loadPhones = async(searchText, dataLimit) =>
+/* const loadPhones = async(searchText, dataLimit) =>
 {
     const url = `https://openapi.programming-hero.com/api/phones?search=${searchText}`;
     const res = await fetch(url);
     const data = await res.json();
     displayPhones(data.data, dataLimit);
-}
-const displayPhones = (phones, dataLimit) => {
+} */
+/* const displayPhones = (phones, dataLimit) => {
     const phonesContainer = document.getElementById('phones-container');
     phonesContainer.textContent = '';
     //---display-10-phones -only-----
@@ -26,9 +26,9 @@ const displayPhones = (phones, dataLimit) => {
     }
     else{
       noPhone.classList.add('d-none');
-    }
+    } */
     //--display-all-phones---
-    phones.forEach(phone =>{
+    /* phones.forEach(phone =>{
     const phoneDiv = document.createElement('div');
     phoneDiv.classList.add('col');
     phoneDiv.innerHTML = `
@@ -45,8 +45,8 @@ const displayPhones = (phones, dataLimit) => {
     });
     //stop loader
     toggleSpinner(false);
-}
-const processSearch = (dataLimit) => {
+} */
+/* const processSearch = (dataLimit) => {
     toggleSpinner(true);
     const searchfield = document.getElementById('search-field');
     const searchText = searchfield.value;
@@ -64,9 +64,9 @@ document.getElementById('search-field').addEventListener('keypress', function (e
   if (e.key === 'Enter') {
     processSearch(10);
   }
-});
+}); */
 //------loading function-------
-const toggleSpinner = isLoading => {
+/* const toggleSpinner = isLoading => {
   const loaderDiv = document.getElementById('loader');
   if(isLoading)
   {
@@ -87,9 +87,9 @@ const loadPhoneDetails = async id => {
   const data = await res.json();
   displayPhoneDetails(data.data);
 }
-
+ */
 //-----------display-phone-details---------
-const displayPhoneDetails = phone =>
+/* const displayPhoneDetails = phone =>
 {
   console.log(phone);
   const modalTitle = document.getElementById('phoneDetailModalLabel');
@@ -101,4 +101,15 @@ const displayPhoneDetails = phone =>
   `;
 }
 
-loadPhones('oppo');
+loadPhones('oppo'); */
+
+//-------------Module introduction Different way to Create Object(module-35-start)---------
+//-------------create object using object literals---------------
+const player = {};
+player.name = 'rafiq'; //this called property
+player.age = 34;
+player.job = function(){  //this called method
+  console.log('swing your ball');
+}
+console.log(player);
+player.job();
