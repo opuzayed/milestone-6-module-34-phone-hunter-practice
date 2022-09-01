@@ -191,13 +191,27 @@ const values = Object.values(bottle);
 
 //---------using entries see key and value together in array into array or multidimentional array---
 const fullObject = Object.entries(bottle);
-console.log(fullObject);
+//console.log(fullObject);
 
 //---------using delete---delete key and values-----------
-console.log(bottle);
+//console.log(bottle);
 //----------seal dile existing propertyr value change korke pare but new property add kora jabe na---
 
-Object.seal(bottle);
+/* Object.seal(bottle);
 delete bottle.isCleaned;
-bottle.color = 'yellow';
-console.log(bottle);
+bottle.color = 'yellow'; */
+//console.log(bottle);
+
+//--------------example------various-----loop------------
+/* const numbers = [12, 14, 15, 19, 30];
+for(const number of numbers)
+console.log(number); */
+
+//--------------- for of can not used with direct object----------
+const bottles = {color : 'red', weight : '5kg', price : 50, isCleaned : true}
+const bKeys = Object.keys(bottles);
+//console.log(bKeys);
+for(const key of bKeys)
+{
+  console.log(key);
+}
