@@ -184,4 +184,11 @@ console.log(dolaRemaining); */
 //------------see-keys--------------
 const bottle = {color : 'red', weight : '5kg', price : 50}
 const keys = Object.keys(bottle);
-console.log(keys);
+//console.log(keys);
+//------see-object-values--------
+const values = Object.values(bottle);
+//console.log(values);
+
+//---------using entries see key and value together in array into array or multidimentional array---
+const fullObject = Object.entries(bottle);
+console.log(fullObject);
