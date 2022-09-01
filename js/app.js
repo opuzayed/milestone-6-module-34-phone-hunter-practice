@@ -130,4 +130,16 @@ const person = new Object();
 
 //------------object-create-method---------
 const atel = Object.create(student);
-console.log(atel);
+//console.log(atel);
+
+//-----------using-class-create-object--------------------
+class persons{
+  name = 'opu';
+  address = 'uttara';
+  constructor(age)
+  {
+    this.age = age;
+  }
+}
+const person1 = new persons(23);
+console.log(person1);
