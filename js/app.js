@@ -105,16 +105,16 @@ loadPhones('oppo'); */
 
 //-------------Module introduction Different way to Create Object(module-35-start)---------
 //-------------create object using object literals---------------
-const player = {};
+/* const player = {};
 player.name = 'rafiq'; //this called property
 player.age = 34;
 player.job = function(){  //this called method
   //console.log('swing your ball');
 }
 //console.log(player);
-player.job();
+player.job(); */
 //------------Another way declare object----------
-const student = 
+/* const student = 
 {
   name : 'opu',
   age : 23,
@@ -122,18 +122,18 @@ const student =
    // console.log('swing the bll');
   },
   salary : 10000
-}
+} */
 
 //------------object-constructor---------
-const person = new Object();
+//const person = new Object();
 //console.log(person);
 
 //------------object-create-method---------
-const atel = Object.create(student);
+//const atel = Object.create(student);
 //console.log(atel);
 
 //-----------using-class-create-object--------------------
-class persons{
+/* class persons{
   name = 'opu';
   address = 'uttara';
   constructor(age)
@@ -141,5 +141,27 @@ class persons{
     this.age = age;
   }
 }
-const person1 = new persons(23);
-console.log(person1);
+const person1 = new persons(23); */
+//console.log(person1);
+
+//-----------using-function-create-object--------------------
+/* function car(model, color)
+{
+  this.model = model;
+  this.color = color;
+}
+const tesla = new car('opu', 'red'); */
+//console.log(tesla);
+
+//------------------Object method access and set property values----------------
+const student = {
+  name : 'opu',
+  money : 5000,
+  study : 'cse',
+  subjects : ['c', 'c++', 'c#', 'java'],
+  exam : function(){
+    return this.name + ' is participating in this exam';
+  }
+}
+const output = student.exam();
+console.log(output);
