@@ -111,15 +111,19 @@ player.age = 34;
 player.job = function(){  //this called method
   console.log('swing your ball');
 }
-console.log(player);
+//console.log(player);
 player.job();
-//------------object-constructor----------
+//------------Another way declare object----------
 const student = 
 {
   name : 'opu',
   age : 23,
   ball : function(){
-    console.log('swing the bll');
+   // console.log('swing the bll');
   },
   salary : 10000
 }
+
+//------------object-constructor---------
+const person = new Object();
+console.log(person);
