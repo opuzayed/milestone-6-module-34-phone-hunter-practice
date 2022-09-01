@@ -225,5 +225,40 @@ for(const key of bKeys)
 //----------advanced looping -------------
 for(const [key, value] of Object.entries(bottles))
 {
-  console.log(key, value);
+  //console.log(key, value);
 }
+
+//-------comparision-----
+const firstNumber = {a:2, b : 5, d : 5};
+const secondNumber = {a:2, c:5, b:5};
+/* const firstString = JSON.stringify(firstNumber);
+const secondString = JSON.stringify(secondNumber);
+if(firstString === secondString)
+{
+  console.log('same');
+}
+else
+console.log('not same'); */
+
+//------------using function to compare object equal or not----------
+
+function compareObject(first, second)
+{
+    const firstKeys = Object.keys(first);
+    const secondKeys = Object.keys(second);
+    if(firstKeys.length === secondKeys.length)
+    {
+      for(const key of firstKeys)
+      {
+        if(first[key] !== second[key])
+        return false;
+      }
+      return true;
+    }
+    else{
+      return false;
+    }
+}
+const isSame = compareObject(firstNumber, secondNumber);
+console.log(isSame);
+
