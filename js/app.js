@@ -154,7 +154,7 @@ const tesla = new car('opu', 'red'); */
 //console.log(tesla);
 
 //------------------Object method access and set property values----------------
-const student = {
+/* const student = {
   name : 'opu',
   money : 5000,
   study : 'cse',
@@ -172,12 +172,16 @@ const student = {
     this.money = this.money - amount - tips;
     return this.money;
   }
-}
-const output = student.exam();
+} */
+/*const output = student.exam();
 //console.log(output);
 const reExam = student.improveExam('c#');
 //console.log(reExam);
 const remaining = student.treatDey(900, 100);
 console.log(remaining);
 const dolaRemaining = student.treatDey(500, 50);
-console.log(dolaRemaining);
+console.log(dolaRemaining); */
+//------------see-keys--------------
+const bottle = {color : 'red', weight : '5kg', price : 50}
+const keys = Object.keys(bottle);
+console.log(keys);
