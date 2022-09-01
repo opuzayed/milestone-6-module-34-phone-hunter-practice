@@ -165,9 +165,16 @@ const student = {
   improveExam : function(subject){
     this.exam();
     return `${this.name} is taking exam on ${subject}`
+  },
+  treatDey : function(amount){
+    //set value
+    this.money = this.money - amount;
+    return this.money;
   }
 }
 const output = student.exam();
 //console.log(output);
 const reExam = student.improveExam('c#');
-console.log(reExam);
+//console.log(reExam);
+const remaining = student.treatDey(900);
+console.log(remaining);
