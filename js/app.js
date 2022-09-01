@@ -216,7 +216,14 @@ for(const key of bKeys)
   //console.log(key, bottles[key]);
 }
 //----------for in work of object---------
-for(const key in bottles)
+/* for(const key in bottles)
 {
-  console.log(key, bottles[key]);
+  const value = bottles[key];
+  console.log(key, value);
+} */
+
+//----------advanced looping -------------
+for(const [key, value] of Object.entries(bottles))
+{
+  console.log(key, value);
 }
