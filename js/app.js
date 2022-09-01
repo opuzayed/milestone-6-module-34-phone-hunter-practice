@@ -159,6 +159,7 @@ const student = {
   money : 5000,
   study : 'cse',
   subjects : ['c', 'c++', 'c#', 'java'],
+
   exam : function(){
     return this.name + ' is participating in this exam';
   },
@@ -166,9 +167,9 @@ const student = {
     this.exam();
     return `${this.name} is taking exam on ${subject}`
   },
-  treatDey : function(amount){
+  treatDey : function(amount, tips){
     //set value
-    this.money = this.money - amount;
+    this.money = this.money - amount - tips;
     return this.money;
   }
 }
@@ -176,5 +177,7 @@ const output = student.exam();
 //console.log(output);
 const reExam = student.improveExam('c#');
 //console.log(reExam);
-const remaining = student.treatDey(900);
+const remaining = student.treatDey(900, 100);
 console.log(remaining);
+const dolaRemaining = student.treatDey(500, 50);
+console.log(dolaRemaining);
