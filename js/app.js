@@ -109,7 +109,7 @@ const player = {};
 player.name = 'rafiq'; //this called property
 player.age = 34;
 player.job = function(){  //this called method
-  console.log('swing your ball');
+  //console.log('swing your ball');
 }
 //console.log(player);
 player.job();
@@ -126,4 +126,8 @@ const student =
 
 //------------object-constructor---------
 const person = new Object();
-console.log(person);
+//console.log(person);
+
+//------------object-create-method---------
+const atel = Object.create(student);
+console.log(atel);
