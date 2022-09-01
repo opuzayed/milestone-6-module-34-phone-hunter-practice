@@ -182,7 +182,7 @@ console.log(remaining);
 const dolaRemaining = student.treatDey(500, 50);
 console.log(dolaRemaining); */
 //------------see-keys--------------
-const bottle = {color : 'red', weight : '5kg', price : 50}
+const bottle = {color : 'red', weight : '5kg', price : 50, isCleaned : true}
 const keys = Object.keys(bottle);
 //console.log(keys);
 //------see-object-values--------
@@ -192,3 +192,12 @@ const values = Object.values(bottle);
 //---------using entries see key and value together in array into array or multidimentional array---
 const fullObject = Object.entries(bottle);
 console.log(fullObject);
+
+//---------using delete---delete key and values-----------
+console.log(bottle);
+//----------seal dile existing propertyr value change korke pare but new property add kora jabe na---
+
+Object.seal(bottle);
+delete bottle.isCleaned;
+bottle.color = 'yellow';
+console.log(bottle);
