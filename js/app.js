@@ -161,7 +161,13 @@ const student = {
   subjects : ['c', 'c++', 'c#', 'java'],
   exam : function(){
     return this.name + ' is participating in this exam';
+  },
+  improveExam : function(subject){
+    this.exam();
+    return `${this.name} is taking exam on ${subject}`
   }
 }
 const output = student.exam();
-console.log(output);
+//console.log(output);
+const reExam = student.improveExam('c#');
+console.log(reExam);
