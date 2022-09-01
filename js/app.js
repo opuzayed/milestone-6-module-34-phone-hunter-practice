@@ -113,3 +113,13 @@ player.job = function(){  //this called method
 }
 console.log(player);
 player.job();
+//------------object-constructor----------
+const student = 
+{
+  name : 'opu',
+  age : 23,
+  ball : function(){
+    console.log('swing the bll');
+  },
+  salary : 10000
+}
